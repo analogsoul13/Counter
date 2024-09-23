@@ -24,9 +24,9 @@ const Counter = () => {
             <button onClick={()=>{dispatch(decrement())}} className='bg-red-500 px-6 py-2 rounded-full shadow-md'>- Decrease</button>
         </div>
 
-        <div className='flex flex-col items-center justify-center'>
-          <input onChange={(e)=>{setVal(Number(e.target.value))}} className='bg-gray-300 text-white p-2' type="number" />
-          <button onClick={()=>dispatch(addValue(val))} className='bg-green-500 w-full p-2' type='submit'>Submit</button>
+        <div className='flex flex-col items-center w-full justify-center p-3'>
+          <input onChange={(e)=>{setVal(Number(e.target.value))}} className='border text-gray-400 w-100 p-2 rounded-md border-outline-none p-2' type="number" />
+          <button onClick={()=>dispatch(addValue(val))} className='bg-green-500 w-24 mt-2 rounded-full p-2' type='submit'>Submit</button>
         </div>
     </div>
     </>
